@@ -4639,6 +4639,7 @@ safe-regex-test@^1.0.3:
   resolved "file:"
   dependencies:
     "@react-native-async-storage/async-storage" "^1.23.1"
+    "@react-native-community/datetimepicker" "^7.6.3"
     "@react-native-community/netinfo" "^11.3.2"
     "@react-native-vector-icons/ionicons" "^7.4.0-alpha.16"
     "@react-navigation/native" "^6.1.17"
