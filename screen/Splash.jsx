@@ -8,16 +8,12 @@ const Splash = () => {
   useEffect(() => {
     const checkLoginStatus = async () => {
       try {
-        const response = await AsyncStorage.getItem('response'); // Check if the response exists in AsyncStorage
-        console.log('Response:', response);  // Log the response to check what you have
+     
         
-        if (response) {
-          // If the response contains a value, navigate to MainScreen
+       
           navigation.navigate('MainScreen');
-        } else {
-          // If the response is empty, navigate to Login screen
-          navigation.navigate('Login');
-        }
+    
+        
       } catch (error) {
         console.error('Error retrieving response:', error);
         // If there was an error in retrieving the response, navigate to Login screen
@@ -35,7 +31,7 @@ const Splash = () => {
       <StatusBar translucent backgroundColor="transparent" />
       <View style={styles.upper}>
         <View>
-          <Text style={styles.company_name}>SLIDING DISPATCH </Text>
+          <Text style={styles.company_name}>RJL WAGON DISPATCH </Text>
         </View>
       </View>
       <View style={styles.lower}>
